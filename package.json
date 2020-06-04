@@ -1,0 +1,30 @@
+{
+  "name": "@xohu/vue-cli-plugin-ifdef",
+  "version": "1.0.0",
+  "description": "vue-cli3 ifdef",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xohu/vue-cli-plugin-ifdef.git",
+    "directory": "vue-cli-plugin-ifdef"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "if",
+    "ifdef",
+    "endif"
+  ],
+  "author": "XoHu <zhuqinhu@qq.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/xohu/vue-cli-plugin-ifdef/issues"
+  },
+  "homepage": "https://github.com/xohu/vue-cli-plugin-ifdef/blob/master/README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
