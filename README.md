@@ -26,7 +26,7 @@ module.exports = {
         js: true,     // 条件编译开关 - js（default：js || check）
         html: true,   // 条件编译开关 - html（default：html || check）
         file: true,   // 条件编译开关 - 静态资源（随 vue-cli3 配置，默认为 public 目录）（default：file || check）
-        log: true,    // 是否输出日志 - js（default：log || check）
+        log: true,    // 是否输出日志 - 项目根目录生成 ifdef.json 文件（default：log || check）
         // 如无特殊需求，上面配置项使用默认即可，不需要配置
         // 以下列出了需要条件编译去验证的自定义模块
         // true：开启条件编译，false：关闭条件编译
