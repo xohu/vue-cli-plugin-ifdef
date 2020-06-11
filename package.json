@@ -1,6 +1,6 @@
 {
   "name": "@xohu/vue-cli-plugin-ifdef",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "vue-cli3 条件编译",
   "main": "./index.js",
   "repository": {

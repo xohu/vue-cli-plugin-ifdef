@@ -1,5 +1,5 @@
 # @xohu/vue-cli-plugin-ifdef
-> 此插件剥离自 [uni-app 官网](https://uniapp.dcloud.io/platform?id=%e6%9d%a1%e4%bb%b6%e7%bc%96%e8%af%91 "demo")，并加以改造以适应 vue-cli
+> 此插件剥离自 [uni-app](https://uniapp.dcloud.io/platform?id=%e6%9d%a1%e4%bb%b6%e7%bc%96%e8%af%91 "demo")，并加以改造以适应 vue-cli
 
 > vue-cli3 的条件编译插件
 
@@ -26,7 +26,7 @@ module.exports = {
         js: true,     // 条件编译开关 - js（default：js || check）
         html: true,   // 条件编译开关 - html（default：html || check）
         file: true,   // 条件编译开关 - 静态资源（随 vue-cli3 配置，默认为 public 目录）（default：file || check）
-        log: false,    // 是否输出日志 - 项目根目录生成 ifdef.json 文件（default：log || false）
+        log: false,   // 是否输出日志 - 项目根目录生成 ifdef.json 文件（default：log || false）
         // 如无特殊需求，上面配置项使用默认即可，不需要配置
         // 以下列出了需要条件编译去验证的自定义模块
         // true：开启条件编译，false：关闭条件编译
