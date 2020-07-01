@@ -5,15 +5,15 @@
 
  **安装**
 
- ```
-  vue add @xohu/ifdef
-  or
-  npm install @xohu/vue-cli-plugin-ifdef -D
-  or
-  cnpm install @xohu/vue-cli-plugin-ifdef -D
-  ```
+```
+vue add @xohu/ifdef
+or
+npm install @xohu/vue-cli-plugin-ifdef -D
+or
+cnpm install @xohu/vue-cli-plugin-ifdef -D
+```
 
-  ## 配置
+### 配置
 可以通过 `vue.config.js` > `pluginOptions.ifdefConfig` 进行配置
 
 ``` js
@@ -34,6 +34,7 @@ module.exports = {
           module1: true,
           module2: true,
           module3: false,
+          client: process.env.VUE_APP_CLIENT,
           admin: process.env.VUE_APP_CLIENT == 'admin'
         }
       }
@@ -41,11 +42,18 @@ module.exports = {
 }
 ```
 
-## 支持的文件
-- `.vue`
-- `.js`
-- `.css`
-- `各预编译语言文件，如：.scss、.less、.stylus`
+### 支持的文件
+```
+.vue
+
+.js
+
+.css
+
+各预编译语言文件，如：.scss、.less、.stylus
+```
+
+### 使用方法
 ```
 -- 不同语法中的注释，请严格区分使用
 
@@ -54,22 +62,32 @@ css           使用 /* 注释 */
 vue template  使用 <!-- 注释 -->
 
 -- js 
-// #ifdef module
+// #ifdef module1
 内容
 // #endif
 
 -- css 
-/* #ifdef module */
+/* #ifdef module2 */
 内容
 /* #endif */
 
 -- vue template 
-<!-- #ifdef module -->
+<!-- #ifdef module3 -->
 内容
 <!-- #endif -->
 ```
 
-## 注意事项
+```
+#ifdef module
+#ifdef !module
+
+#ifdef client == 'admin'
+#ifdef client != 'admin'
+
+#ifdef module1 || module2
+```
+
+### 注意事项
 ```
 使用此插件时，请检查是否有其它插件过滤掉了注释，因为条件编译的判断条件是需要注释去实现的
 ```
